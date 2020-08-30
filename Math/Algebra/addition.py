@@ -1,8 +1,8 @@
-
-
 def addition(a, b):
-    """Additon of two numbers
-    
+    """
+    Additon of two numbers
+    https://en.wikipedia.org/wiki/Addition
+
     >>> addition(2, 2)
     4
     
