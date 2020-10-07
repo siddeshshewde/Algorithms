@@ -1,11 +1,4 @@
 
-edit
-play_arrow
-
-brightness_4
-// A sample Java program to sort an array of integers 
-// using Arrays.sort(). It by default sorts in 
-// ascending order 
 import java.util.Arrays; 
   
 public class SortExample 
