@@ -21,7 +21,7 @@ int add(int m, int n)
 
 int main()
 {
-    printf("\n\n\t\tStudytonight - Best place to learn\n\n\n");
+   
     int a, b, r;
     printf("Enter the two numbers:\n");
     scanf("%d%d", &a, &b);
