@@ -1,4 +1,3 @@
-//Ref. CLRS
 #include <stdlib.h>
 #include <stdio.h>
 
@@ -44,7 +43,7 @@ int main()
     int *array = (int *)malloc(N * sizeof(int));
 
     //accepting array from the user
-    printf("Enter elements to be sorted: ");
+    printf("Enter elements to be sorted:\n");
     for (int i = 0; i < N; ++i)
         scanf("%d", &array[i]);
 
