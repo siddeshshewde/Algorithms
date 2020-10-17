@@ -2,7 +2,7 @@
 
 ## Before contributing
 
-Welcome to [Algorithms/Python](https://github.com/siddeshshewde/Algorithms/tree/master/Python)! Before sending your pull requests, make sure that you **read the whole guidelines**. If you have any doubt on the contributing guide, please feel free to [state it clearly in an issue](https://github.com/siddeshshewde/Algorithms/issues) or ask the community in [Discord](https://discord.com/channels/744541139104956442/762549113623019540).
+Welcome to [Algorithms/Python](https://github.com/siddeshshewde/Algorithms/tree/master/Python)! Before sending your pull requests, make sure that you **read the whole guidelines**. If you have any doubt on the contributing guide, please feel free to [state it clearly in an issue](https://github.com/siddeshshewde/Algorithms/issues) or ask the community in [Discord](https://discord.gg/TEwZyy).
 
 ## Contributing
 
@@ -144,5 +144,5 @@ We want your work to be readable by others; therefore, we encourage you to note 
 
 - Most importantly,
   - **Be consistent in the use of these guidelines when submitting.**
-  - **Join** [Discord](https://discord.com/channels/744541139104956442/762549113623019540) **now!**
+  - **Join** [Discord](https://discord.gg/TEwZyy) **now!**
   - Happy coding!
