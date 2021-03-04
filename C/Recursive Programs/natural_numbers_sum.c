@@ -6,7 +6,7 @@ int main()
     printf("Enter a positive integer: ");
     scanf("%d",&number);
     result=sum(number);
-    printf("sum = %d",result);
+    printf("Sum = %d",result);
     return 0;
 }
 int sum(int n)
