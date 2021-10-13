@@ -5,12 +5,15 @@
  */
 package algorithms;
 
+import java.util.Scanner;
+
 @SuppressWarnings("unchecked")
 public class DynamicArray<T> implements Iterable<T> {
 
     private T[] arr;
-    private int len = 0; // length user thinks array is
+    private static int len = 0; // length user thinks array is
     private int capacity = 0; // Actual array size
+    static Scanner sc = new Scanner(System.in);
 
     public DynamicArray() {
         this(16);
@@ -161,35 +164,70 @@ public class DynamicArray<T> implements Iterable<T> {
         }
     }
 
+    public static boolean checkBounds(int num) {
+        boolean f = true;
+        if (num >= len || num < 0) {
+            System.out.println("IndexOutOfBound, Please Enter Correct Index no\n\n");
+            f = false;
+        }
+        return f;
+    }
+
     public static void main(String[] args) {
 
         //Test
         DynamicArray DA = new DynamicArray();
-        System.out.println(DA);
-        System.out.println("isEmpty :" + DA.isEmpty());
-        DA.add(15);
-        DA.add(1);
-        DA.add(3);
-        System.out.println(DA);
-        DA.set(2, 2);
-        System.out.println(DA);
-        System.out.println("Zero Index value :" + DA.get(0));
-        System.out.println("isEmpty :" + DA.isEmpty());
-        System.out.println(DA);
-        DA.removeAt(2);
-        System.out.println(DA);
-        DA.removeAt(1);
-        System.out.println(DA);
-        DA.removeAt(0);
-        System.out.println(DA);
-        System.out.println("Size :" + DA.size());
-        System.out.println("isEmpty :" + DA.isEmpty());
-        DA.add(15);
-        DA.add(1);
-        DA.add(3);
-        System.out.println(DA.len);
-        System.out.println("Index 2 is " + DA.get(2));
-        DA.clear();
-        System.out.println(DA);
+        while (true) {
+            int Index;
+            System.out.println("Enter a choice:");
+            System.out.println("1. Add an Element to the Array.");
+            System.out.println("2. Remove Index Element from Array.");
+            System.out.println("3. Print all the Elements from Array.");
+            System.out.println("4. Check the Array is Empty or Not.");
+            System.out.println("5. Get Index Element.");
+            System.out.println("6. Clear all Element of Array.");
+            System.out.println("7. Exit.");
+
+            int choice = sc.nextInt();
+            switch (choice) {
+                case 1:
+                    System.out.println("Enter an Element ");
+                    DA.add(sc.next());
+                    System.out.println("Element Added Successfully\n\n");
+                    break;
+                case 2:
+                    System.out.println("\n\nEnter Index No. to remove");
+                    Index = sc.nextInt();
+                    if (checkBounds(Index)) {
+                        DA.removeAt(Index);
+                        System.out.println("Element Removed Successfully\n\n");
+                    }
+                    break;
+                case 3:
+                    System.out.println(DA);
+                    System.out.println("Print Successfully\n\n");
+                    break;
+                case 4:
+                    System.out.println(DA.isEmpty() + "\n\n");
+                    break;
+                case 5:
+                    System.out.println("Enter Index No. :");
+                    Index = sc.nextInt();
+                    if (checkBounds(Index)) {
+                        System.out.println("Index " + Index + " is " + DA.get(Index) + "\n\n");
+                    }
+                    break;
+                case 6:
+                    DA.clear();
+                    System.out.println("Cleared All Element Successfully\n\n");
+                    break;
+                case 7:
+                    System.out.println("Exiting the Application.");
+                    System.exit(0);
+                default:
+                    System.out.println("Enter a correct option.");
+            }
+        }
+
     }
 }
