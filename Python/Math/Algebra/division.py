@@ -5,7 +5,7 @@ def division(a, b):
 
     >>> division(2, 2)
     1.0
-    
+
     >>> division(2, -2)
     -1.0
 
@@ -14,6 +14,7 @@ def division(a, b):
 
     """
     return a / b
+
 
 if __name__ == "__main__":
     a = 5
