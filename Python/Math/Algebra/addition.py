@@ -5,7 +5,7 @@ def addition(a, b):
 
     >>> addition(2, 2)
     4
-    
+
     >>> addition(2, -2)
     0
 
@@ -14,6 +14,7 @@ def addition(a, b):
 
     """
     return a + b
+
 
 if __name__ == "__main__":
     a = 5
