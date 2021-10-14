@@ -1,12 +1,6 @@
 #include<stdio.h>
 #include <conio.h>
-void heapify_function(int arr[])
-{
-    int i,n;
-    n=arr[0];
-    for(i=n/2;i>=1;i--)
-    adjust(arr,i);
-}
+
 void adjust(int arr[],int i)
 {
     int j,temp,n,k=1;
@@ -29,11 +23,18 @@ void adjust(int arr[],int i)
       }
 }
 
+void heapify_function(int arr[])
+{
+    int i,n;
+    n=arr[0];
+    for(i=n/2;i>=1;i--)
+    adjust(arr,i);
+}
+
 void main()
 {
     int arr[100],n,temp,last,i;
-    clrscr();
-    
+
     printf("How many Numbers you want to enter in your array: \n");
     scanf("%d",&n);
     printf("Enter Elements in array:\n");
