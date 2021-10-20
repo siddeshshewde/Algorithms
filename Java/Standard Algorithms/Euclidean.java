@@ -26,7 +26,7 @@ public class Euclidean
         int a =sc.nextInt();
         int b=sc.nextInt();
         int answer=gcd(a,b);
-        System.out.println("The gcd of "+a+" and "+b+"is "+answer);
+        System.out.println("The GCD of "+a+" and "+b+" is "+answer.);
   
     }
 }
