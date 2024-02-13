@@ -1,5 +1,9 @@
 import java.util.*;
 
+/*
+ * @author Jonas Ermert
+ */
+
 public class Dijkstra {
 
     private static final int INFINITY = Integer.MAX_VALUE;
